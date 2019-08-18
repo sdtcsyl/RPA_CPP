@@ -1,6 +1,7 @@
 ////////////////////
 //window.h
 //模拟窗口的常见操作
+//https://docs.microsoft.com/en-us/windows/win32/api/winuser/
 ////////////////////
 #pragma once
 #include<iostream>
