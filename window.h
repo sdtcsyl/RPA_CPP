@@ -83,8 +83,8 @@ int WND_SAVEAS::click_save()
     this->wnd = FindWindowA(NULL,"Save As");
     this->wnd_child = GetWindow(this->wnd, GW_CHILD);
     this->wnd_child = FindWindowExA(this->wnd, this->wnd_child, NULL, "&Save");
-    this->res_down = SendMessage(this->this->wnd_child, WM_LBUTTONDOWN, MK_LBUTTON, MAKELPARAM(0, 0));
-    this->res_up = SendMessage(wnd_child, WM_LBUTTONUP, MK_LBUTTON, MAKELPARAM(0, 0));
+    this->res_down = SendMessage(this->wnd_child, WM_LBUTTONDOWN, MK_LBUTTON, MAKELPARAM(0, 0));
+    this->res_up = SendMessage(this->wnd_child, WM_LBUTTONUP, MK_LBUTTON, MAKELPARAM(0, 0));
     return this->res_down;
 }
 
